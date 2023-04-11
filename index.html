@@ -453,17 +453,64 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-wrap">
+          <p class="footer-text text">Subscribe</p>
+          <form class="form-footer">
+            <input
+              class="footer-email"
+              type="email"
+              name="footer-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--todo     = BackDrop -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close>
           <svg class="icon-close-btn" width="8" height="8">
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+        <p class="text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label>
+            Name
+            <input type="text" class="form-input" name="user_name" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" class="form-input" name="tel" />
+          </label>
+          <label>
+            Email
+            <input type="email" class="form-input" name="email" />
+          </label>
+          <label>
+            Comment
+            <textarea
+              name="feedback"
+              class="form-input"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input
+            id="privacy"
+            type="checkbox"
+            class="form-input"
+            name="privacy"
+          />
+          <label for="privacy">
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+          <button type="submit" class="form-btn">Send</button>
+        </form>
       </div>
     </div>
 
