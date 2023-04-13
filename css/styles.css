@@ -775,7 +775,8 @@ line-height: calc(14 / 12);
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .form-input-privacy:checked + .form-label-checkbox .checkbox-span {
+  .form-input-privacy:checked + .form-label-checkbox .checkbox-span,
+  .form-input-privacy:checked + .form-label-checkbox .modal-checkbox-icon {
     fill: var(--light-logo-color);
     border: none;
     background-color: var(--hover-color);
